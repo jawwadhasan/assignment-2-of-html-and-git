@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+
+  form {
+    max-width: 420px;
+    margin: auto;
+  }
+
+  label {
+    display: inline;
+    margin-bottom: 8px;
+  }
+
+  .aa{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    background-color: rgb(4, 25, 65);
+    
+  }
+.abc1{
+    display: block;
+    margin-bottom: 8px;
+
+}
+.abc2{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    background-color: rgb(4, 25, 65);
+}
+.abc3{
+    width: 20%;
+    padding: 5px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    background-color: rgb(170, 171, 173);
+}
+  /* input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    background-color: rgb(4, 25, 65);
+  } */
+
+  button {
+    background-color: #4caf50;
+    color: rgb(243, 243, 243);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+
+  .checkbox-container {
+      margin: 20px;
+  }
+
+  .checkbox-label {
+      font-size: 16px;
+  }
+  .form-check{
+    margin-left: 405px;
+  }
+  .xyz{
+   
+    margin-left: 205px;
+    margin-right: 189px;
+    font-size: large;
+    color: white;
+    
+  }
+  .form-check-label{
+    color: white;
+  }
+
+ 
+</style>
+</head>
+    <font color="white"><text align="center"><h1>Registration Form</h1></text></font>
+    <font color="white"><text align="center"><h5>Kindly Complete This Form By Providing The Necessary Details</h5></text></font>
+  <form id="registrationForm">
+    <font color="white"><label for="firstName">First Name:</label>
+    <input class="aa" type="text" id="firstName" name="firstName" required>
+
+    <label for="lastName">Last Name:</label>
+    <input class="aa" type="text" id="lastName" name="lastName" required>
+
+    <label for="fatherName">Father Name:</label>
+    <input class="aa"type="text" id="fatherName" name="fatherName" required>
+
+    <label for="CNIC NO">CNIC NO:</label>
+    <input class="aa" type="text" id="CNIC" name="CNIC" required>
+
+    <label for="email">Email:</label>
+    <input class="aa"type="email" id="email" name="email" required>
+
+    <label for="Age">Age:</label>
+    <input class="aa" type="age" id="email" name="age" required>
+
+    <label for="Phone No">Phone No:</label>
+    <input class="aa" type="phone no" id="phone no" name="phone no" required></font>
+
+  </form>
+
+  <hr width="550px">
+
+  <font color="white"><form action="/upload" method="post" enctype="multipart/form-data">
+    <label class="abc1" for="file">Upload Profile Picture:</label>
+    <input class="abc2"type="file" id="file" name="file" accept=".txt, .pdf, .doc, .docx">
+    <br>
+    <input  class="abc3" type="submit" value="Upload">
+
+    <label class="abc1" for="selectBox">Through what means did you find out about us:</label>
+        <select id="selectBox" name="selectBox" style="width: 420px;">
+          <option value="select one">Select One</option>
+            <option value="Whatsapp">Whatsapp</option>
+            <option value="Instagram">Instagram</option>
+            <option value="Facebook">Facebook</option>
+            <option value="Friends">Friends</option>
+            <option value="Others">Others</option>
+
+        </select>
+        </form><br>
+
+        <form>
+        <label  class="abc4" for="biographical summary">Biographical Summary:</label>
+        <textarea name="comment" form="usrform" style="width: 415px; background-color: rgb(4, 25, 65);">Enter text here...</textarea>
+
+      </form></font>
+<hr width="550px">
+
+<div  class="xyz"><p class="xyz">You are expected to conduct yourself professionally and ethically,
+     maintaining a high standard of integrity and respect for your colleagues.  You will comply with 
+     all applicable laws and company policies,including those related to confidentiality and data protection.</p></div>
+
+     <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+        <label class="form-check-label" for="defaultCheck1">
+         Yes, I Agree
+        </label></div>
+        <br>
+        <form><p align="right"><button type="button" onclick="submitForm()">Submit</button></p>
+
+    
+      <style>
+    
+        body {
+          background-color:rgb(2, 39, 70);
+        }
+    </style>
+    
+    
+    
+     </body>
+    </html>
+    
+
